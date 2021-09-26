@@ -1,0 +1,88 @@
+HTML metadata 
+  language setting: <html lang="en-US">
+  SEO related:
+      <title>Meta examples</title>
+      <meta name="author" content="adi purnama"> 
+      <meta name="description" content="description content"> 
+  load js: <script src="my-js-file.js" defer></script>
+  custom icon: <link rel="icon" href="favicon.ico" type="image/x-icon">
+  custom css: <link rel="stylesheet" href="my-css-file.css">
+  fb link: <meta property="og:title" content="Mozilla Developer Network">
+  twitter link: <meta name="twitter:title" content="Mozilla Developer Network">
+
+Text Fundamentals
+  structural hierarchy: h1 -> h2 -> h3; preferably no more than 3 headings /page.
+  emphasis and importance: <em> <strong>; recognized by screen readers
+  word styling: <i> <u> <b>
+
+Creating Hyperlinks
+  Linking to non-HTML resources — leave clear signposts: 
+  <p><a href="https://www.example.com/video-stream/" target="_blank">
+    Watch the video (stream opens in separate tab, HD quality)
+  </a></p>
+  Use the download attribute when linking to a download:
+  <a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
+    download="firefox-latest-64bit-installer.exe">
+    Download Latest Firefox for Windows (64-bit) (English, US)
+  </a>
+  E-mail links: <a href="mailto:nowhere@mozilla.org">Send email to nowhere</a>
+
+Advanced text formatting
+  Description List
+    <dl>
+      <dt>description terms</dt>
+      <dd>description definition</dd>
+    </dl>
+  Quotations
+    </blockquote> block-level element </blockquote>
+    <q> quote: inline element </q>
+    <cite> citing a source (actually do nothing), inline element </cite>
+  Abbreviations: 
+    <abbr title="Hypertext Markup Language">HTML</abbr>
+  Address
+    <address>
+      <p>
+        Chris Mills<br>
+        Manchester<br>
+        The Grim North<br>
+        UK
+      </p>
+    </address>
+  Superscript and subscript
+    <p>My birthday is on the 25<sup>th</sup> of May 2001.</p>
+    <p>Caffeine's chemical formula is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>.</p>
+    <p>If x<sup>2</sup> is 9, x must equal 3 or -3.</p>
+  Computer Code
+    <code>: For marking up generic pieces of computer code.
+    <pre>: For retaining whitespace (generally code blocks) — if you use indentation or excess whitespace inside your text, browsers will ignore it and you will not see it on your rendered page. If you wrap the text in <pre></pre> tags however, your whitespace will be rendered identically to how you see it in your text editor.
+    <var>: For specifically marking up variable names.
+    <kbd>: For marking up keyboard (and other types of) input entered into the computer.
+    <samp>: For marking up the output of a computer program.
+  Times and Date
+    <time datetime="2016-01-20">20 January 2016</time>
+    <time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time>
+
+Document and website structure
+  Common Website Scructure
+      header: <header>.
+      navigation bar: <nav>. can be placed inside <header>.
+      main content: <main>, with various content subsections represented by <article>, <section>, and <div> elements.
+      sidebar: <aside>; often placed inside <main>.
+      footer: <footer>.
+      ex:
+        <header></header>
+        <nav></nav>
+        <main>
+          <aside></aside>
+          <article></article>
+        </main>
+        <footer></footer>
+  Line Break and Horizontal Rules
+    <br> line break
+    <hr> horizontal rules   
+
+Debugging HTML - skipped
+
+Assessment: Marking up a letter
+
+Assessment: Structuring a page of content

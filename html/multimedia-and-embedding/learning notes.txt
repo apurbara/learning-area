@@ -1,0 +1,21 @@
+Images in HTML
+    Replaced elements: 
+        In CSS, a replaced element is an element whose representation is outside the scope of CSS; 
+        they're external objects whose representation is independent of the CSS formatting model.
+        https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element
+    <figure>
+        <img src="images/dinosaur.jpg"
+            alt="The head and torso of a dinosaur skeleton;
+                    it has a large head with long sharp teeth"
+            width="400"
+            height="341">
+        <figcaption>A T-Rex on display in the Manchester University Museum.</figcaption>
+    </figure>
+        width & height: This doesn't result in much difference to the display, under normal circumstances. 
+            But if the image isn't being displayed, for example, the user has just navigated to the page, 
+            and the image hasn't yet loaded, you'll notice the browser is leaving a space for the image to appear in
+
+Video and Audio Content
+    Youtube video and Google Maps fail to load if iframe sandboxed with default value, will load properly if values is set with
+    sandbox="allow-scripts allow-same-origin"; 
+

@@ -20,11 +20,23 @@
 
   <body>
     <h1>Embedding</h1>
-
+    <object data="./media/mypdf.pdf" type="application/pdf" width="800" height="1200">
+      <p>unable to open file, here is <a href="./media/mypdf.pdf">link to original file</a></p>
+    </object>
     <!-- PDF embed here  -->
 
     <hr>
+    <h2>Youtube Embedding</h2>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xiXLtEi4Ui8" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen sandbox="allow-scripts allow-same-origin">
+      <!-- <p>unable to play youtube videos, here is <a href="https://www.youtube.com/watch?v=xiXLtEi4Ui8">link to original video</a></p> -->
+    </iframe>
 
+    <h2>Google Maps Embedding</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.0032214870976!2d55.21837881489072!3d25.135581940366006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6bd598bb6c2f%3A0x92d588c01662eb6e!2sRandom%20Location!5e0!3m2!1sid!2sid!4v1632473532225!5m2!1sid!2sid" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
     <!-- 3rd party embed here  -->
 
   </body>
