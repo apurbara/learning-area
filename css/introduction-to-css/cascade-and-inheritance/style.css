@@ -1,5 +1,9 @@
 /* General styles */
 
+body {
+  color: green;
+}
+
 hr {
   width: 80%;
   margin: 50px auto;
@@ -26,36 +30,43 @@ hr {
 /* Selector weight example */
 
 /* specificity: 0201; */
+
 #weight #outer a {
   background-color: red;
 }
 
 /* specificity: 0301; */
+
 #weight #outer #inner a {
   background-color: blue;
 }
 
 /* specificity: 0204; */
+
 #weight #outer div ul li a {
   color: yellow;
 }
 
 /* specificity: 0213; */
+
 #weight #outer div ul .nav a {
   color: white;
 }
 
 /* specificity: 0124; */
+
 #weight div div li:nth-child(2) a:hover {
   border: 10px solid black;
 }
 
 /* specificity: 0123; */
+
 #weight div li:nth-child(2) a:hover {
   border: 10px dashed black;
 }
 
 /* specificity: 0133; */
+
 #weight div div .nav:nth-child(2) a:hover {
   border: 10px double black;
 }
@@ -88,10 +99,33 @@ hr {
 }
 
 #live div div li a {
-color: yellow;
+  color: yellow;
 }
 
 #live #outer #inner a {
   background-color: initial;
   color: red;
+}
+
+.main {
+  color: rebeccapurple;
+  border: 2px solid #ccc;
+  padding: 1em;
+}
+
+.special {
+  color: black;
+  font-weight: bold;
+}
+
+.my-class-1 a {
+  color: inherit;
+}
+
+.my-class-2 a {
+  color: initial;
+}
+
+.my-class-3 a {
+  color: unset;
 }

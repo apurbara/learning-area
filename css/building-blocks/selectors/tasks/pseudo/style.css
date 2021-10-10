@@ -1,0 +1,30 @@
+table {
+    border-collapse: collapse;
+    width: 300px;
+}
+
+td, th {
+    padding: 0.2em;
+    text-align: left;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container p:first-child {
+    font-size: 150%;
+}
+
+.container p:first-child::first-line {
+    color: red;
+}
+
+.container table tr:nth-child(even) {
+    background-color: #333;
+    color: white;
+}

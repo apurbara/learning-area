@@ -1,5 +1,9 @@
 /* General setup */
 
+html {
+  font-size: 62.5%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,6 +16,7 @@ body {
 
 /* Layout */
 
+/*
 section {
   float: left;
   width: 50%;
@@ -34,12 +39,132 @@ footer {
 header, section, aside, nav, footer {
   padding: 20px;
 }
+*/
 
 /* header and footer */
 
-header, footer {
+footer {
   border-top: 5px solid #a66;
   border-bottom: 5px solid #a66;
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+
+/* typography */
+
+header, 
+footer, 
+aside {
+  font-family: "Lato", sans-serif;
+}
+
+.main-content {
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  font-size: 4.8rem;
+  text-align: center;
+  word-spacing: 1.2rem;
+  letter-spacing: 0.2rem;
+}
+
+nav {
+  font-size: 2rem;
+}
+
+.main-content, 
+aside, 
+footer {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+
+.main-content h2 + p {
+  text-indent: 2rem;
+}
+
+.main-content ul,
+.main-content ol {
+  padding-left: 3rem;
+}
+
+/* layout */
+
+header, 
+main,
+.main-content,
+aside,
+footer {
+  margin: 0;
+  padding: 2rem;
+}
+
+h1 {
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+nav {
+  height: 10rem;
+  display: flex;
+  flex: 100%;
+}
+
+nav ul {
+  display: flex;
+  width: 100%;
+  background-color: purple;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 2rem;
+  pointer-events: none;
+}
+
+nav li:hover {
+  background-color: teal;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav li > a {
+  pointer-events: auto;
+}
+
+aside {
+  float: right;
+}
+
+main a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+  background-color: rosybrown;
+}
+
+a[href^="https"] {
+  margin-left: 20px;
+}
+
+a[href^="https"]::before {
+  content: "";
+  background-image: url("external-link-52.png");
+  background-size:cover;
+  position:absolute;
+  width:20px;
+  height:20px;
+  margin-left:-20px;
+}

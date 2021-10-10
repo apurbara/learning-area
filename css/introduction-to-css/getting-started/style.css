@@ -1,0 +1,34 @@
+h1 {
+    color: red;
+}
+
+li {
+    list-style-type: '. ';
+}
+
+.special {
+    color: orange;
+    font-weight: bold;
+}
+
+body h1 + p .special {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+li em {
+    color: rebeccapurple;
+}
+
+h1+p {
+    font-size: 2em;
+}
+
+a:link {
+    color: pink;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
