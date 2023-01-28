@@ -1,14 +1,25 @@
+import Game from "./game.js";
+
 // setup canvas
 
-const canvas = document.querySelector('canvas');
-const ctx = canvas.getContext('2d');
+const canvas = document.querySelector("canvas");
+const ctx = canvas.getContext("2d");
 
-const width = canvas.width = window.innerWidth;
-const height = canvas.height = window.innerHeight;
+const width = (canvas.width = window.innerWidth);
+const height = (canvas.height = window.innerHeight);
 
 // function to generate random number
 
-function random(min, max) {
+/**
+ *
+ * @param {number} min
+ * @param {number} max
+ * @returns
+ */
+export function random(min, max) {
   const num = Math.floor(Math.random() * (max - min + 1)) + min;
   return num;
 }
+
+let game = new Game(10, ctx, width, height);
+game.play();

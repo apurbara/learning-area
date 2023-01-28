@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Coffe Fetch</title>
+  </head>
+  <body>
+    <p>This is My Coffee</p>
+    <script>
+      fetch("coffee.jpg")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`HTTP Error! status: ${response.status}`);
+          } else {
+            return response.blob();
+          }
+        })
+        .then((myBlob) => {
+          console.log(myBlob);
+          let objectURL = URL.createObjectURL(myBlob);
+          let image = document.createElement("img");
+          image.src = objectURL;
+          document.body.appendChild(image);
+        })
+        .catch((e) => {
+          console.log(
+            `There has been a problem with your fetch operation ${e.message}`
+          );
+        });
+    </script>
+  </body>
+</html>

@@ -30,9 +30,18 @@
       this.name = name;
       this.sides = sides;
       this.sideLength = sideLength;
+      this.calcPerimeter = function() {
+        return 'perimeter of ' + this.name + ' is ' + this.sides * this.sideLength;
+      };
     }
 
     // Write your code below here
+    let square = new Shape('square', 4, 20);
+    console.log(square.calcPerimeter());
+    
+    let triangle = new Shape('triangle', 3, 25);
+    console.log(triangle.calcPerimeter());
+
   </script>
 
 </html>

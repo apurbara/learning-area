@@ -26,7 +26,23 @@
 
   </body>
   <script>
-
+    class Shape {
+      constructor(name, sides, sideLength) {
+        this.name = name;
+        this.sides = sides;
+        this.sideLength = sideLength;
+      }
+      calcPerimeter() {
+        return 'perimeter of ' + this.name + ' is ' + this.sides * this.sideLength;
+      }
+    }
+    
+    let square = new Shape('square', 4, 20);
+    console.log(square.calcPerimeter());
+    
+    let triangle = new Shape('triangle', 3, 25);
+    console.log(triangle.calcPerimeter());
   </script>
+
 
 </html>
